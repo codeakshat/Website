@@ -24,90 +24,99 @@
     </head>
     <body>
 
-        <header id="header" class="header d-flex align-items-center">
-            <div class="container-fluid container-xl position-relative d-flex align-items-center">
+       
 
-                <a href="richfeel.html"
-                    class="logo d-flex align-items-center me-auto">
-                    <!-- Uncomment the line below if you also wish to use an image logo -->
-                    <!-- <img src="assets/img/logo.png" alt=""> -->
-                    <h1 class="sitename">Rich feel</h1>
-                </a>
-
-                <nav id="navmenu" class="navmenu">
-                    <ul>
-                        <li><a href="richfeel.html" class="active">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                     
-                        <li class="dropdown"><a href=""><span>Products</span>
-                                <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                            <ul>
-                                <li><a href="products/panties.html">Panties</a></li>
-                                <li><a href="products/bra.html"><span>Bra</span> </a>
-                                </li>
-                                <li><a href="products/nightware.html">Nightware</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-
-                </nav>
-
+        <header class="header">
+            <!-- Logo -->
+            <div class="logo">
+                <h1>Rich Feel</h1>
             </div>
+    
+            <!-- Navigation Menu -->
+            <nav id="navmenu" class="navmenu">
+                <!-- Close Button for Mobile Navbar -->
+                <div class="mobile-nav-close">✖
+                    <h1 class="logo">Rich Feel</h1>
+                </div>
+                <!-- <div class="logo">
+                    <h1>Rich Feel</h1>
+                </div> -->
+                
+                <ul>
+                    <li><a href="richfeel.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Products</a>
+                        <ul>
+                            <li><a href="products/panties.html">Panties</a></li>
+                            <li><a href="products/bra.html">Bra</a></li>
+                            <li><a href="products/nightwear.html">Nightwear</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Mobile Toggle Button -->
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">☰</button>
         </header>
 
 
 
 
 
+
+
+
         <div class="popular-products">
-            <!-- <div class="container"> -->
-                <div class="popular-products-items">
-                    <div class="popular-products-card">
-                        <img src="images/bra.jpeg" alt="House">
-                        <h3>Bra</h3>
-                    </div>
-                    <div class="popular-products-card">
-                        <img src="images/panties.jpeg" alt="House">
-                        <h3>Panties</h3>
-                    </div>
-                    <div class="popular-products-card">
-                        <img src="images/nightware.jpeg" alt="House">
-                        <h3>nightware</h3>
-                    </div>
+            <div class="popular-products-items">
+                <div class="popular-products-card">
+                    <img src="images/bra.jpeg" alt="Bra">
+                    <h3>Bra</h3>
                 </div>
-            <!-- </div> -->
+                <div class="popular-products-card">
+                    <img src="images/panties.jpeg" alt="Panties">
+                    <h3>Panties</h3>
+                </div>
+                <div class="popular-products-card">
+                    <img src="images/nightware.jpeg" alt="Nightwear">
+                    <h3>Nightwear</h3>
+                </div>
+            </div>
         </div>
+
+        
+
 
 
         <div class="content">
             <div class="images">
                 <div class="carousel-slider">
-                <img
-                    src="https://wallpaperscraft.com/image/planet_light_spots_space_86643_1920x1080.jpg"
-                    alt="Hello" />
+                    <img src="https://wallpaperscraft.com/image/planet_light_spots_space_86643_1920x1080.jpg" alt="Hello" />
                 </div>
                 <div class="carousel-slider">
-                <img
-                    src="images/house.jpg"
-                    alt="Hello2" />
+                    <img src="images/house.jpg" alt="Hello2" />
                 </div>
                 <div class="carousel-slider">
-                <img
-                    src="images/scenary.jpg"
-                    alt="Hello3" />
+                    <img src="images/scenary.jpg" alt="Hello3" />
                 </div>
             </div>
+    
+            <!-- Left Slide Button -->
             <div onclick="side_slide(-1)" class="slide left">
                 <span>
                     <i class="bi bi-chevron-left"></i>
                 </span>
             </div>
+    
+            <!-- Right Slide Button -->
             <div onclick="side_slide(1)" class="slide right">
                 <span>
                     <i class="bi bi-chevron-right"></i>
                 </span>
             </div>
+    
+            <!-- Carousel Buttons -->
             <div class="btn-sliders">
                 <span onclick="btn_slide(1)"></span>
                 <span onclick="btn_slide(2)"></span>
@@ -117,55 +126,54 @@
 
 
 
-
-
-
         
     <div class="footer">
         <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 footer_section">
-                <a href="index.html"><span>RICHFEEL</span></a>
-                <div class="footer_contact pt-3">
-                    <p>Address</p>
-                    <p>Mobile number</p>
-                    <p>email</p>
+            <div class="row">
+                <!-- Footer Section 1: Company Info -->
+                <div class="col-lg-3 col-md-6 footer_section">
+                    <a href="index.html"><span><strong>RICHFEEL</strong></span></a>
+                    <div class="footer_contact pt-3">
+                        <p><strong>Address:</strong> Your Address</p>
+                        <p><strong>Mobile:</strong> 123-456-7890</p>
+                        <p><strong>Email:</strong> info@richfeel.com</p>
+                    </div>
+                </div>
+
+                <!-- Footer Section 2: Links -->
+                <div class="col-lg-3 col-md-6 footer_section">
+                    <h3>Links</h3>
+                    <div class="footer_links">
+                        <a href="richfeel.html"><i class="bi bi-chevron-right"></i> Home</a>
+                        <a href="about.html"><i class="bi bi-chevron-right"></i> About Us</a>
+                        <a href="contact.html"><i class="bi bi-chevron-right"></i> Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- Footer Section 3: Products -->
+                <div class="col-lg-3 col-md-6 footer_section">
+                    <h3>Our Products</h3>
+                    <div class="footer_links">
+                        <a href="products/panties.html"><i class="bi bi-chevron-right"></i> Panties</a>
+                        <a href="products/bra.html"><i class="bi bi-chevron-right"></i> Bra</a>
+                        <a href="products/nightware.html"><i class="bi bi-chevron-right"></i> Nightware</a>
+                    </div>
+                </div>
+
+                <!-- Footer Section 4: Social Media Links -->
+                <div class="col-lg-3 col-md-6 footer_section">
+                    <h3>Follow Us On</h3>
+                    <div class="footer_social_links">
+                        <a href="https://twitter.com"><i class="bi bi-twitter"></i></a>
+                        <a href="https://whatsapp.com"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://instagram.com"><i class="bi bi-instagram"></i></a>
+                        <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+                    </div>
+                    <p>Company logo here</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 footer_section">
-                <h3>Links</h3>
-                <div class="footer_links">
-                    <a href="richfeel.html"><i class="bi bi-chevron-right">Home</i></a>
-                    <a href="about.html"><i class="bi bi-chevron-right">About US</i></a>
-                    <!-- <a href=""><i class="bi bi-chevron-right">Products</i></a> -->
-                    <a href="contact.html"><i class="bi bi-chevron-right">Contact Us</i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 footer_section">
-                <h3>Our Products</h3>
-                <div class="footer_links">
-                    <a href="products/panties.html"><i class="bi bi-chevron-right">Panties</i></a>
-                    <a href="products/bra.html"><i class="bi bi-chevron-right">Bra</i></a>
-                    <a href="products/nightware.html"><i class="bi bi-chevron-right">Nightware</i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 footer_section">
-                <h3>Follow Us On</h3>
-                <div class="footer_social_links">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-whatsapp"></i></a>
-                            <a href="">   
-                        <i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                </div>
-                <p>company logo</p>
-            </div>
-        </div>
         </div>
     </div>
-
-
-
 
 
         <!-- Bootsrap JS File -->
@@ -174,8 +182,67 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
 
-        <!-- Custom JS File -->
-        <script src="richfeel-script.js"></script>
+
+        <script>
+
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButton = document.querySelector('.mobile-nav-toggle');
+            const closeButton = document.querySelector('.mobile-nav-close');
+            const navMenu = document.querySelector('.navmenu');
+
+            // Open the mobile menu
+            toggleButton.addEventListener('click', () => {
+                navMenu.classList.add('active');
+            });
+
+            // Close the mobile menu
+            closeButton.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+
+
+
+              var indexValue = 1;
+        showImg(indexValue);
+
+        function btn_slide(e) {
+            showImg(indexValue = e);
+        }
+
+        function side_slide(e) {
+            showImg(indexValue += e);
+        }
+
+        function showImg(e) {
+            var i;
+            const img = document.getElementsByClassName("carousel-slider");
+            const sliders = document.querySelectorAll(".btn-sliders span");
+
+            if (e > img.length) {
+                indexValue = 1;
+            }
+            if (e < 1) {
+                indexValue = img.length;
+            }
+
+            for (i = 0; i < sliders.length; i++) {
+                sliders[i].style.background = "blue";
+            }
+
+            // Update the translateX of the images container to show the current image
+            const imagesContainer = document.querySelector(".images");
+            imagesContainer.style.transform = "translateX(" + (-100 * (indexValue - 1)) + "%)";
+
+            // Update the dot navigation
+            sliders[indexValue - 1].style.background = "white";
+        }
+        
+
+        </script>
 
     </body>
 </html>
